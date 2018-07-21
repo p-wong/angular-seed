@@ -1,0 +1,107 @@
+.header {
+  font-family: 'ApercuMedium';
+  font-size: 75px;
+  margin-bottom: 15px;
+}
+
+.structure {
+  margin-left: 100px;
+  width: 45%;
+}
+
+.subtitle {
+  font-family: 'ApercuLight';
+  font-size: 19px;
+  line-height: 30px;
+  margin: 0px 0px 45px 10px;
+}
+
+.form-questions {
+  font-family: 'ApercuRegular';
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.dropdown {
+  font-family: 'ApercuLight';
+  margin: 10px 0px 0px 10px;
+  width: 98.5%;
+  height: 45px;
+  font-size: 15px;
+  padding: 0px 0px 0px 20px;
+  border-color: #dbdbdb;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  border-color: #ffd26c;
+}
+
+select:focus {
+  outline: none;
+  border-color: #ffd26c;
+}
+
+.btn-group button {
+  margin: 10px 0px 0px 0px;
+  font-family: 'ApercuLight';
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  color: black;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 24.61%;
+  height: 45px;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:first-child {
+  margin-left: 10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.btn-group button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.btn-group button:focus {
+  outline: none;
+  background-color: #fff1d3;
+  border-color: #ffd26c;
+  font-family: 'ApercuRegular';
+  font-weight: bold;
+}
+
+.start-btn {
+  margin: 30px 0px 0px 10px;
+  border-radius: 6px;
+  height: 45px;
+  width: 130px;
+  background-color: #ffd26c;
+  border-color: #ffd26c;
+  font-family: 'ApercuRegular';
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: #ffc66c;
+  border-color: #ffc66c;
+}
+
+.start-btn:focus {
+  outline: none;
+  background-color: #ffc66c;
+  border-color: #ffc66c;
+}

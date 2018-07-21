@@ -1,1 +1,31 @@
-<p>This is the partial for view 1.</p>
+<div class='structure float-left'>
+
+  <div class='header'>Where Businesses Thrive</div>
+
+  <div class='subtitle'>
+    Whether you need a desk, office suite, or entire HQ, we create environments that increase productivity, innovation, and collaboration.
+  </div>
+
+  <div class='form-questions'>
+    Where you'd like space
+  </div>
+
+  <select class='dropdown' ng-model="selectedName" ng-options="x for x in names">
+    <option value="" disabled>Select Option</option>
+  </select>
+
+  <div class='form-questions'>
+    How many employees are in your company
+  </div>
+
+  <div class='btn-group'>
+    <button>1-20</button>
+    <button>20-100</button>
+    <button>100-1,000</button>
+    <button>1,000+</button>
+  </div>
+
+
+  <button class='start-btn' ng-click="go(selectedName)">Start</button>
+
+</div>

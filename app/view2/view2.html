@@ -1,5 +1,58 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div ng-app="myApp.view2" ng-controller="View2Ctrl">
+
+  <div class='workspace-header'>
+    {{city}}
+  </div>
+
+  <div class='float-left margin-first-div form-margins'>
+    <div class='workspace-form-questions'>
+      How many people need workspace?
+    </div>
+    <input class='number-employees' type='number' placeholder="Number of People"/>
+  </div>
+
+  <div class='float-left form-margins'>
+    <div class='workspace-form-questions'>
+      When would you like to move in?
+    </div>
+    <div class='when-move-in-buttons'>
+      <button>This Month</button>
+      <button>Next Month</button>
+      <button>Other</button>
+    </div>
+  </div>
+
+  <div class='float-left form-margins'>
+    <div class='workspace-form-questions'>
+      In which neighborhoods?
+    </div>
+
+    <select class='workspace-dropdown' name='location' ng-model="selectedNeighborhood" ng-options="x for x in names">
+      <option value="" disabled>All Neighborhoods</option>
+    </select>
+  </div>
+
+  <button class='find-workspace-btn'>Find Workspace</button>
+
+  <div class='viewing-workspace'>
+    Viewing 52 buildings
+  </div>
+
+  <div class='margin-first-div' ng-init="myImgUrl= './wework-w14.png'">
+    <a href=''><img ng-src="{{myImgUrl}}" class='workspace-imgs' height=440px width=350px /></a>
+    <a href=''><img [src]="W29" class='workspace-imgs' height=440px width=350px /></a>
+    <a href=''><img [src]="DOCK72" class='workspace-imgs' height=440px width=350px /></a>
+  </div>
+
+  <!-- <div><react-component name="Hello" props="person"/></div>
+
+  <form class="pure-form">
+    <fieldset>
+      <legend>Enter Name</legend>
+      <input type="text" ng-model="person.fname" placeholder="First Name"/>
+      <input type="text" ng-model="person.lname" placeholder="Last Name"/>
+    </fieldset>
+  </form>
+
+  <div name="myValue"></div> -->
+</div>
